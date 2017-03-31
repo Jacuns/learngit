@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #F0F0F0;
+}
+
+.header {
+  width: 100%;
+  height: 80px;
+  background: #F45757;
+}
+
+.header .header-content,
+.list {
+  width: 900px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.header .header-content h1, 
+.header .header-content .textarea,
+.header .header-content button {
+  float: left;
+  display: block;
+}
+
+.header .header-content h1 {
+  color: #FFF;
+  line-height: 80px;
+}
+
+.header .header-content .textarea,
+.header .header-content .add-btn {
+  height: 36px;
+  background: #FFF;
+  font-size: 16px;
+  outline: 0;
+  border: none;
+  border-radius: 4px;
+}
+
+.header .header-content .textarea {
+  width: 500px;
+  margin: 22px 10px 0 20px;
+  padding: 10px;
+}
+
+.header .header-content .add-btn {
+  width: 120px;
+  margin: 22px 0 0 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,.3);
+}
+.header .header-content .add-btn:active {
+  box-shadow: none;
+}
+
+.list {
+  margin-top: 20px;
+}
+
+.list .item {
+  width: 100%;
+  height: 50px;
+  background: #FFF;
+  overflow: hidden;
+}
+
+.list .finish {
+  opacity: .5;
+}
+
+.list .item:hover .operation span {
+  display: block;
+}
+
+.list .item .finish,
+.list .item .text,
+.list .item .operation {
+  float: left;
+  height: 50px;
+}
+
+.list .item .finish,
+.list .item .operation {
+  width: 50px;
+}
+
+.list .item .finish {
+  user-select: none;
+  cursor: pointer;
+}
+
+.list .item .finish .circle {
+  width: 20px;
+  height: 20px;
+  margin: 15px;
+  border-radius: 50%;
+  border: 2px solid #666;
+  display: block;
+}
+.list .item .finish .finish-circle {
+  background: green;
+  border-color: green;
+}
+
+.list .item .text {
+  width: 800px;
+}
+
+.list .item .text p {
+  color: #222;
+  font-size: 16px;
+  line-height: 50px;
+}
+
+.list .item .operation {
+  line-height: 50px;
+  text-align: center;
+  user-select: none;
+  cursor: pointer;
+}
+.list .item .operation span {
+  display: none;
+}
+.list .item .operation:active {
+  background: #EEE;
+}
